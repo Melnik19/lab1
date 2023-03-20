@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/animal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="My Animal App"
+        android:textColor="#3A3838"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_pig"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animal_text"
+        app:layout_constraintVertical_bias="0.02">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            app:srcCompat="@drawable/pig" />
+
+        <TextView
+            android:id="@+id/about_pig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Чупа"
+            android:textColor="#3A3838"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/about_pig1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:text="Морська свинка"
+            android:textColor="#404040"></TextView>
+
+        <Button
+            android:id="@+id/button_pig"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="25dp"
+            android:text="Деталі"
+            android:textSize="12sp"></Button>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_dog"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView_pig"
+        app:layout_constraintVertical_bias="0.03">
+
+        <ImageView
+            android:id="@+id/image_dog"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            app:srcCompat="@drawable/dog" />
+
+        <TextView
+            android:id="@+id/about_dog"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Супер"
+            android:textColor="#3A3838"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/about_dog1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:text="Моя Собачка"
+            android:textColor="#404040"></TextView>
+
+        <Button
+            android:id="@+id/button_dog"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="25dp"
+            android:text="Деталі"
+            android:textSize="12sp"></Button>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_cat"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView_dog"
+        app:layout_constraintVertical_bias="0.04">
+
+        <ImageView
+            android:id="@+id/image_cat"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            app:srcCompat="@drawable/cat" />
+
+        <TextView
+            android:id="@+id/about_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Кукі"
+            android:textColor="#3A3838"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/about_cat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:text="Кіт Брата"
+            android:textColor="#404040"></TextView>
+
+        <Button
+            android:id="@+id/button_cat"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="25dp"
+            android:text="Деталі"
+            android:textSize="12sp"></Button>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
